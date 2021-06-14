@@ -1,5 +1,12 @@
-section img {
+section.main_img {
+    position: absolute;
+    top: 10vh;
     width: 100vw;
     height: 90vh;
+}
+
+section.main_img img {
     object-fit: cover;
+    width: 100vw;
+    height: 90vh;
 }

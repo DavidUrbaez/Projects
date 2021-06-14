@@ -1,0 +1,90 @@
+/* Section Presentation */
+
+#presentation {
+    /* display: flex; */
+    margin-top: 100vh;
+    height: 90vh;
+    text-align: center;
+}
+
+#presentation .container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0;
+    height: 90vh;
+}
+
+#presentation .container .content {
+    display: flex;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.219);
+}
+
+#presentation .image {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation .image img {
+    height: 90%;
+    width: auto;
+    border-radius: 30px;
+}
+
+#presentation .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+#presentation h2 {
+    margin: 0;
+    font-variant: small-caps;
+    color: rgb(21, 111, 196);
+    font-size: 28px;
+}
+
+#presentation p {
+    color: white;
+    text-align: justify;
+    /* width: 270px; */
+    padding: 0 10vw 5vh 10vw;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+/* Parallax stuff */
+
+.parallax__container {
+    clip: rect(0, auto, auto, 0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+.parallax {
+    position: fixed;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
