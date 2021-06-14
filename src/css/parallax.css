@@ -5,6 +5,7 @@
     margin-top: 100vh;
     height: 90vh;
     text-align: center;
+    width: 100%;
 }
 
 #presentation .container {
@@ -16,9 +17,9 @@
 
 #presentation .container .content {
     display: flex;
-    margin: 5vh 5vw;
-    padding: 5vh 5vw;
-    height: 70vh;
+    margin: auto 5vw;
+    padding: 0;
+    height: 60vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,7 @@
 
 #presentation .image {
     display: flex;
-    height: 40vh;
+    height: 35vh;
     justify-content: center;
     align-items: center;
 }
