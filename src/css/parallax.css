@@ -88,3 +88,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (min-width: 600px) {
+    #presentation .container .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5vh 5%;
+    }
+    #presentation .image {
+        width: 50vh;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #presentation .text {
+        margin: 0 50px;
+    }
+    #presentation .container .content p,
+    #presentation .container .content h2 {
+        padding: 0;
+    }
+}
