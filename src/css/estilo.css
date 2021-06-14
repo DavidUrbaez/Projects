@@ -210,7 +210,7 @@ section.non {
     }
     nav ul.menu-box li a {
         font-size: 16px;
-        /* margin: 0 auto; */
+        text-align: center;
         width: 100%;
     }
     .hamburger {
@@ -220,5 +220,17 @@ section.non {
         background-color: var(--button-hover);
         transition: inset .3s;
         box-shadow: inset 0 -2px 0 0 var(--secundary);
+    }
+}
+
+@media (min-width:800px) {
+    nav ul.menu-box li:first-child,
+    nav ul.menu-box li:nth-child(2),
+    nav ul.menu-box li:nth-child(3),
+    nav ul.menu-box li:last-child {
+        width: 120px;
+    }
+    nav ul.menu-box {
+        margin-right: 5vw;
     }
 }
