@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 /* variables a ser usadas  */
 
 :root {
@@ -10,6 +15,10 @@
     --blue-gradient: linear-gradient(90deg, #42b983, #35495e);
     --button-hover: #125ec2;
     --text-shadow: .2rem .2rem .2rem #0d0d0e;
+}
+
+*:focus {
+    outline: 0;
 }
 
 
