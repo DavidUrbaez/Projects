@@ -4,12 +4,6 @@
 }
 
 :root {
-    --primary: #22b9ff;
-    --secundary: #00043a;
-    --tertiary: #0c4981;
-    --background: #35495e;
-    --white-text: #ffffff;
-    --button-hover: #125ec2;
     /* cards dimension */
     --card-height: 500px;
     --card-width: 300px;
