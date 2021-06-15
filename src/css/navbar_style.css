@@ -1,5 +1,9 @@
 /* variables a ser usadas  */
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary: #22b9ff;
     --secundary: #00043a;
