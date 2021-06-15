@@ -1,8 +1,9 @@
 /* Section Presentation */
 
 #presentation {
-    /* display: flex; */
-    margin-top: 100vh;
+    padding-top: 10vh;
+    margin-top: 90vh;
+    /*100vh-10vh (header)*/
     height: 90vh;
     text-align: center;
     width: 100%;
