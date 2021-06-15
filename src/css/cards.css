@@ -85,6 +85,14 @@ html {
     z-index: 25;
 }
 
+.container a:nth-child(7) {
+    z-index: 24;
+}
+
+.container a:nth-child(8) {
+    z-index: 23;
+}
+
 .container .card:after {
     border-bottom: calc(var(--card-height)*var(--percentage-white)) solid #d9d9d9;
     height: calc(var(--card-height)*var(--percentage-blue));
