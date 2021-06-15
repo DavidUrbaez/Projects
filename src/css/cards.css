@@ -1,9 +1,23 @@
 * {
     box-sizing: border-box;
+    outline: 0;
+}
+
+:root {
+    --primary: #22b9ff;
+    --secundary: #00043a;
+    --tertiary: #0c4981;
+    --background: #35495e;
+    --white-text: #ffffff;
+    --button-hover: #125ec2;
+    /* cards dimension */
+    --card-height: 500px;
+    --card-width: 300px;
+    --percentage-blue: 0.6;
+    --percentage-white: 0.4;
 }
 
 html {
-    overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -13,24 +27,24 @@ html {
     top: 10vh;
     width: 100%;
     align-items: center;
-    background-color: #3d3d3d;
+    background-color: #363636;
     display: flex;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     min-height: 90vh;
 }
 
-.container {
+.cards .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5rem;
+    margin: 5rem 0;
     position: relative;
-    transform: skewY(-0deg);
+    transform: skewY(-2deg);
     width: 100%;
 }
 
-.container .card:before {
+.cards .container .card:before {
     height: 15px;
     left: 0;
     transform: skewX(45deg);
@@ -38,13 +52,13 @@ html {
     width: 100%;
 }
 
-.container .card {
+.cards .container .card {
     background-color: #ffffff;
-    height: 400px;
+    height: var(--card-height);
     margin: 3rem;
     position: relative;
     transition: transform 0.5s ease;
-    width: 300px;
+    width: var(--card-width);
 }
 
 .container .card:nth-child(1) {
@@ -60,8 +74,8 @@ html {
 }
 
 .container .card:after {
-    border-bottom: 200px solid #d9d9d9;
-    height: 50%;
+    border-bottom: calc(var(--card-height)*var(--percentage-white)) solid #d9d9d9;
+    height: calc(var(--card-height)*var(--percentage-blue));
     left: -15px;
     transform: skewY(45deg);
     transform-origin: left;
@@ -70,7 +84,7 @@ html {
 
 .container .card:before,
 .container .card:after {
-    background-color: #00c0f6;
+    background-color: #093c6b;
     content: '';
     position: absolute;
     top: -15px;
@@ -84,10 +98,10 @@ html {
 
 .container .card .img-box {
     align-items: center;
-    background-color: #00c7ff;
+    background-color: var(--tertiary);
     border-radius: 0 0 20%;
     display: flex;
-    height: 200px;
+    height: calc(var(--card-height)*var(--percentage-blue));
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -95,20 +109,27 @@ html {
 }
 
 .container .card .img-box img {
+    /* margin: auto; */
     max-width: 250px;
+    border-radius: 5px;
 }
 
 .container .card .img-box h3 {
     color: #ffffff;
-    margin-top: 10px;
+    margin: 15px;
     position: relative;
+    align-items: center;
+    text-align: center;
 }
 
+
+/* Shadows */
+
 .container .card .content:before {
-    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     bottom: 0;
     content: '';
-    height: 400px;
+    height: var(--card-height);
     left: 0;
     pointer-events: none;
     position: absolute;
@@ -117,6 +138,7 @@ html {
     transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
     width: 100%;
     z-index: -1;
+    filter: blur(1px);
 }
 
 .container .card:hover .content:before,
@@ -127,10 +149,13 @@ html {
     transform: translateY(40px) skewX(45deg);
 }
 
+
+/* end Shadows */
+
 .container .card .content {
     background-color: #ffffff;
     color: #777777;
-    height: 200px;
+    height: calc(var(--card-height)*var(--percentage-white));
     padding: 20px;
     position: relative;
     text-align: center;
