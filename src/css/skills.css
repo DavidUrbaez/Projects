@@ -1,0 +1,187 @@
+:root {
+    --primary: #22b9ff;
+    --secundary: #00043a;
+    --tertiary: #0c4981;
+    --background: #35495e;
+    --black-text: rgb(61, 61, 61);
+    --white-text: #ffffff;
+    --blue-gradient: linear-gradient(90deg, #42b983, #35495e);
+    --button-hover: #125ec2;
+    --text-shadow: .2rem .2rem .2rem #0d0d0e;
+}
+
+#my-skills {
+    height: 90vh;
+    background-image: url('../img/img7.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* box-shadow: 0px -20px 12px 4px #363535c4; */
+}
+
+#my-skills h1 {
+    color: white;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: block;
+}
+
+#my-skills ul {
+    margin: 0 10vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#my-skills ul li {
+    List-style: none;
+    width: 100%;
+}
+
+#my-skills ul li h2 {
+    margin: 1vh 0;
+    margin-top: 2vh;
+    font-size: 16px;
+    font-variant: small-caps;
+    /* color: white; */
+}
+
+#my-skills li span.bar {
+    display: block;
+    /* margin-left: 10px; */
+    border: 1px solid rgba(160, 170, 255, 0.616);
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+/* Fill bars General*/
+
+#my-skills li span.bar span {
+    display: block;
+    /* margin-left: 10px; */
+    width: 0;
+    height: 6px;
+    border-radius: 50px;
+    background: rgb(77, 184, 255);
+}
+
+
+/* Fill Each bar */
+
+
+/* Python */
+
+#my-skills li span.bar span.python {
+    width: 90%;
+    animation: python 2s;
+}
+
+@keyframes python {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+
+/* Matlab */
+
+#my-skills li span.bar span.Matlab {
+    width: 70%;
+    animation: Matlab 2s;
+}
+
+@keyframes Matlab {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+/* Javascript */
+
+#my-skills li span.bar span.Javascript {
+    width: 40%;
+    animation: Javascript 2s;
+}
+
+@keyframes Javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+
+/* Html-Css */
+
+#my-skills li span.bar span.Html-Css {
+    width: 50%;
+    animation: Html-Css 2s;
+}
+
+@keyframes Html-Css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+
+/* Labview */
+
+#my-skills li span.bar span.Labview {
+    width: 70%;
+    animation: Labview 2s;
+}
+
+@keyframes Labview {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+/* Excel */
+
+#my-skills li span.bar span.Excel {
+    width: 95%;
+    animation: Excel 2s;
+}
+
+@keyframes Excel {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+
+/* Media query */
+
+@media (min-width:650px) {
+    #my-skills ul {
+        width: 40vw;
+        margin: 0 auto;
+    }
+}
