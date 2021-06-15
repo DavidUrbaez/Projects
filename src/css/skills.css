@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary: #22b9ff;
     --secundary: #00043a;
     --tertiary: #0c4981;
@@ -8,7 +8,7 @@
     --blue-gradient: linear-gradient(90deg, #42b983, #35495e);
     --button-hover: #125ec2;
     --text-shadow: .2rem .2rem .2rem #0d0d0e;
-}
+} */
 
 #my-skills {
     position: absolute;
