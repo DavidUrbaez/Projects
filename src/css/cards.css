@@ -84,7 +84,7 @@ html {
 
 .container .card:before,
 .container .card:after {
-    background-color: #65959b;
+    background-color: #09335a;
     content: '';
     position: absolute;
     top: -15px;
@@ -98,7 +98,7 @@ html {
 
 .container .card .img-box {
     align-items: center;
-    background-color: #8FD1D9;
+    background-color: #0c4981;
     border-radius: 0 0 20%;
     display: flex;
     height: calc(var(--card-height)*var(--percentage-blue));
