@@ -155,6 +155,9 @@ html {
     position: relative;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .card .content p {
