@@ -50,7 +50,7 @@
     margin-top: 2vh;
     font-size: 16px;
     font-variant: small-caps;
-    /* color: white; */
+    color: rgb(202, 202, 202);
 }
 
 #my-skills li span.bar {

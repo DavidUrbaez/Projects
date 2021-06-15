@@ -27,11 +27,12 @@ html {
     top: 10vh;
     width: 100%;
     align-items: center;
-    background-color: #565959;
+    /* background-color: #565959; */
     display: flex;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     min-height: 90vh;
+    background: linear-gradient( #464646, #868686, #919191, #333333);
 }
 
 .cards .container {
@@ -160,4 +161,10 @@ html {
     position: relative;
     text-align: center;
     width: 100%;
+}
+
+.container .card .content p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
 }
