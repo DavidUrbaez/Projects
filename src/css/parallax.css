@@ -19,13 +19,13 @@
     display: flex;
     margin: auto 5vw;
     padding: 0;
-    height: 60vh;
+    height: 70vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* width: 100%; */
     border-radius: 50px;
-    background: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 #presentation .image {
@@ -96,6 +96,7 @@
         align-items: center;
         justify-content: center;
         padding: 5vh 5%;
+        height: 50vh;
     }
     #presentation .image {
         width: 50vh;
