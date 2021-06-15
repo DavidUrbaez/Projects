@@ -13,9 +13,9 @@ navLinks.forEach(link => {
 })
 
 
-// function goToTop() {
+// function goToAbout() {
 //     window.scroll({
-//         top: 0,
+//         top: 1200,
 //         left: 0,
 //         behavior: 'smooth'
 //     });
