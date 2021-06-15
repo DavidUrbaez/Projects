@@ -27,11 +27,12 @@ html {
     top: 10vh;
     width: 100%;
     align-items: center;
-    background-color: #363636;
+    /* background-color: #565959; */
     display: flex;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     min-height: 90vh;
+    background: linear-gradient( #464646, #868686, #919191, #333333);
 }
 
 .cards .container {
@@ -84,7 +85,7 @@ html {
 
 .container .card:before,
 .container .card:after {
-    background-color: #093c6b;
+    background-color: #09335a;
     content: '';
     position: absolute;
     top: -15px;
@@ -98,7 +99,7 @@ html {
 
 .container .card .img-box {
     align-items: center;
-    background-color: var(--tertiary);
+    background-color: #0c4981;
     border-radius: 0 0 20%;
     display: flex;
     height: calc(var(--card-height)*var(--percentage-blue));
@@ -160,4 +161,10 @@ html {
     position: relative;
     text-align: center;
     width: 100%;
+}
+
+.container .card .content p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
 }
