@@ -117,6 +117,18 @@ html {
     z-index: 17;
 }
 
+.container a:nth-child(15) {
+    z-index: 16;
+}
+
+.container a:nth-child(16) {
+    z-index: 15;
+}
+
+.container a:nth-child(17) {
+    z-index: 14;
+}
+
 .container .card:after {
     border-bottom: calc(var(--card-height)*var(--percentage-white)) solid #d9d9d9;
     height: calc(var(--card-height)*var(--percentage-blue));
