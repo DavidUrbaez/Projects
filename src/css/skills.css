@@ -27,6 +27,7 @@
 
 #my-skills h1 {
     color: white;
+    text-align: center;
     margin: 0 auto;
     margin-top: 10vh;
     display: block;
@@ -54,24 +55,27 @@
 }
 
 #my-skills li span.bar {
-    display: block;
-    /* margin-left: 10px; */
-    border: 1px solid rgba(160, 170, 255, 0.616);
-    height: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 2px solid rgb(0 4 74 / 53%);
+    height: 20px;
     width: 100%;
     border-radius: 50px;
+    box-shadow: #152645 2px 3px 0px 0px;
 }
 
 
 /* Fill bars General*/
 
 #my-skills li span.bar span {
-    display: block;
-    /* margin-left: 10px; */
-    width: 0;
-    height: 6px;
+    /* display: block; */
+    /* width: 0; */
+    height: 18px;
     border-radius: 50px;
-    background: rgb(77, 184, 255);
+    /* border: 1px solid rgba(255, 255, 255, 0.616); */
+    background: rgb(77, 184, 255, 0.8);
+    box-shadow: inset #203b6c 0px 0px 10px 4px;
 }
 
 
@@ -82,7 +86,7 @@
 
 #my-skills li span.bar span.python {
     width: 90%;
-    animation: python 2s;
+    animation: python 5s;
 }
 
 @keyframes python {
@@ -99,7 +103,7 @@
 
 #my-skills li span.bar span.Matlab {
     width: 70%;
-    animation: Matlab 2s;
+    animation: Matlab 5s;
 }
 
 @keyframes Matlab {
@@ -116,7 +120,7 @@
 
 #my-skills li span.bar span.Javascript {
     width: 40%;
-    animation: Javascript 2s;
+    animation: Javascript 5s;
 }
 
 @keyframes Javascript {
@@ -133,7 +137,7 @@
 
 #my-skills li span.bar span.Html-Css {
     width: 50%;
-    animation: Html-Css 2s;
+    animation: Html-Css 5s;
 }
 
 @keyframes Html-Css {
@@ -150,7 +154,7 @@
 
 #my-skills li span.bar span.Labview {
     width: 70%;
-    animation: Labview 2s;
+    animation: Labview 5s;
 }
 
 @keyframes Labview {
@@ -167,7 +171,7 @@
 
 #my-skills li span.bar span.Excel {
     width: 95%;
-    animation: Excel 2s;
+    animation: Excel 5s;
 }
 
 @keyframes Excel {
