@@ -1,0 +1,40 @@
+#btn-my-skills {
+    font-variant: small-caps;
+    position: relative;
+    top: -13vh;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    /* z-index: 100000000; */
+    padding: 2vh 3vw;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: #1592ff9e -1px 1px 12px 7px;
+}
+
+#btn-my-skills:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+    background-color: rgb(148, 148, 148);
+}
+
+#my-skills {
+    display: none;
+}
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    height: 0vh;
+    display: none;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.m-fadeIn {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}

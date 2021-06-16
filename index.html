@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="src/css/skills.css">
 
     <link rel="stylesheet" href="src/css/scrollbar.css">
+    <link rel="stylesheet" href="src/css/myskills_button.css">
+
+    <!-- Skills Btn -->
+    <script src="src/js/skillsbtn.js"></script>
+
     <!-- Load Icons -->
     <script src="https://kit.fontawesome.com/95d7ee3267.js" crossorigin="anonymous"></script>
 
@@ -69,6 +74,7 @@
             </div>
             <div class="parallax" data-parallax-image="src/img/img2.jpg"></div>
         </div>
+        <button id="btn-my-skills" onclick="setVisible()">My Skills</button>
     </section>
 
 
@@ -108,7 +114,9 @@
         </ul>
 
     </section>
-
+    <!-- <footer>
+        <p>This is made by me</p>
+    </footer> -->
     <!-- Run Parallax Plug-ing -->
     <script>
         new universalParallax().init({
