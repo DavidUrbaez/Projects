@@ -60,6 +60,7 @@ header nav h1 {
     font-size: 1.5rem;
     margin: 0 5vw;
     width: 70vw;
+    text-align: center;
 }
 
 nav ul.menu-box {
@@ -98,6 +99,10 @@ nav ul.menu-box li:hover {
     background-color: var(--button-hover);
     /* transition: all .3s; */
     box-shadow: inset 0 -2px 0 0 var(--secundary);
+}
+
+nav ul.menu-box li a br {
+    display: none;
 }
 
 
@@ -154,12 +159,12 @@ nav ul.menu-box li:hover {
 
 .nav-open .hamburger {
     transform: rotate(.625turn);
-    background: var(--tertiary);
+    background: var(--secundary);
 }
 
 .nav-open .hamburger::before {
     transform: rotate(270deg) translateX(+7px);
-    background: var(--tertiary);
+    background: var(--secundary);
 }
 
 .nav-open .hamburger::after {
@@ -209,19 +214,13 @@ section.non {
         display: flex;
         justify-content: center;
     }
-    nav ul.menu-box li:first-child {
-        width: 70px;
-    }
-    nav ul.menu-box li:nth-child(2) {
-        width: 90px;
-    }
-    nav ul.menu-box li:nth-child(3) {
-        width: 90px;
-    }
     nav ul.menu-box li a {
         font-size: 16px;
         text-align: center;
         width: 100%;
+    }
+    nav ul.menu-box li a br {
+        display: block;
     }
     .hamburger {
         display: none;
@@ -235,16 +234,25 @@ section.non {
     nav ul.menu-box li:hover a {
         color: var(--secundary);
     }
+    nav ul.menu-box li:before {
+        content: ' ';
+        display: block;
+    }
 }
 
-@media (min-width:800px) {
-    nav ul.menu-box li:first-child,
-    nav ul.menu-box li:nth-child(2),
-    nav ul.menu-box li:nth-child(3),
-    nav ul.menu-box li:last-child {
-        width: 120px;
+@media (min-width:900px) {
+    nav ul.menu-box li {
+        box-sizing: border-box;
+        width: 150px;
     }
     nav ul.menu-box {
         margin-right: 5vw;
+    }
+    nav ul.menu-box li a {
+        font-size: 20px;
+        width: 100%;
+    }
+    nav ul.menu-box li a br {
+        display: none;
     }
 }
