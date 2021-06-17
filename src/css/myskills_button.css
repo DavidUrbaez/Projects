@@ -17,24 +17,35 @@
 }
 
 body {
-    background-color: rgb(148, 148, 148);
+    background-color: rgba(12, 6, 37, 0.493);
 }
 
 #my-skills {
     display: none;
 }
 
-.m-fadeOut {
-    visibility: hidden;
-    opacity: 0;
-    height: 0vh;
-    display: none;
-    transition: visibility 0s linear 300ms, opacity 300ms;
+footer {
+    clear: both;
+    position: relative;
+    bottom: -11.6vh;
+    display: block;
+    background-color: rgb(31, 31, 39);
+    /* position: fixed; */
+    /* padding: 10px 10px 0px 10px; */
+    /* bottom: -10vh; */
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.m-fadeIn {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 300ms;
+footer div {
+    font-family: serif;
+    font-size: 16px;
+    color: white;
+    padding: 15px 50px;
+}
+
+div.content {
+    color: white;
 }
