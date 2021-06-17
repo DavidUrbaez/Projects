@@ -7,13 +7,13 @@ function setVisible() {
         x.style.display = "block";
         window.location.href = '#my-skills';
 
-        footer.style.display == "none";
+        footer.style.display = "none";
         // footer.remove();
     } else {
         window.location.href = '#presentation'
         x.style.display = "none";
 
-        footer.style.display == "flex";
+        footer.style.display = "flex";
     }
     console.log(footer);
 }
