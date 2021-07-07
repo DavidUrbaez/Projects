@@ -4,7 +4,7 @@ function setVisible() {
     // var footer = document.getElementById("footer");
     console.log(footer.style.display);
     if (x.style.display === "none" || x.style.display == "") {
-        x.style.display = "block";
+        x.style.display = "flex";
         window.location.href = '#my-skills';
 
         // footer.style.display = "none";
