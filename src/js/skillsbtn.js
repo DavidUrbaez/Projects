@@ -1,21 +1,21 @@
 function setVisible() {
     // document.getElementById("my-skills").style.visibility = "visible";
     var x = document.getElementById("my-skills");
-    var footer = document.getElementById("footer");
+    // var footer = document.getElementById("footer");
     console.log(footer.style.display);
     if (x.style.display === "none" || x.style.display == "") {
         x.style.display = "block";
         window.location.href = '#my-skills';
 
-        footer.style.display = "none";
+        // footer.style.display = "none";
         // footer.remove();
     } else {
         window.location.href = '#presentation'
         x.style.display = "none";
 
-        footer.style.display = "flex";
+        // footer.style.display = "flex";
     }
-    console.log(footer);
+    // console.log(footer);
 }
 
 // document.getElementById("my-skills").addEventListener("click", function() {

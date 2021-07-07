@@ -11,10 +11,10 @@
 } */
 
 #my-skills {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    top: 190vh;
-    height: 90vh;
+    /* top: 190vh; */
+    height: 80vh;
     background-image: url('../img/img7.jpg');
     background-size: cover;
     display: flex;
