@@ -22,6 +22,7 @@
     color: var(--primary);
     justify-content: center;
     align-items: center;
+    overflow: auto;
     /* box-shadow: 0px -20px 12px 4px #363535c4; */
 }
 
